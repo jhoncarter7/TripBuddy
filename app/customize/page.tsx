@@ -65,7 +65,7 @@ const Customize = () => {
         {/* list */}
         <div className="  h-[60vh] pb-4 mb-6 overflow-scroll text-gray-500 flex gap-y-4 flex-col ">
           {destination?.map((item, id) => (
-            <div key={id} className="cursor-pointer ">
+            <div key={id} className="cursor-pointer " onClick={()=> router.push(`/customize/${item}`)}>
               <p className="text-xl font-medium flex items-center pl-4 md:pl-8 w-[90vw] md:w-[70vw] lg:w-[50vw] hover:rounded-xl border-[1px] border-white hover:bg-[#E5F9F3]  hover:border-[#00B277] h-12">
                 {item}
               </p>
